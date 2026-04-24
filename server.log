@@ -1,0 +1,22 @@
+INFO User logged in
+ERROR Database connection failed
+CRITICAL System crash detected
+INFO Page loaded
+FAILED LOGIN attempt from IP 192.168.1.10
+
+
+INFO User login successful for user123
+INFO Page loaded successfully
+ERROR Database connection failed at 10:32 AM
+INFO Cache cleared
+CRITICAL System crash detected in module X
+INFO User logout
+FAILED LOGIN attempt from IP 192.168.1.10
+INFO Backup completed
+ERROR Unable to fetch API response
+INFO New user registered
+CRITICAL Memory overflow detected
+INFO Service restarted
+FAILED LOGIN attempt from IP 10.0.0.5
+INFO Email sent successfully
+ERROR Payment processing failed
