@@ -13,6 +13,7 @@ Instead of manually scanning thousands of log lines, OpsBot:
 -- Business Problem
 
 Servers generate massive log data (≈5000 lines/day).
+
 Manually identifying FAILED LOGIN, ERROR, and CRITICAL events is:
 
 1. Time-consuming 
@@ -23,10 +24,12 @@ OpsBot automates this process and reduces manual effort significantly.
 -- Features
 
 1.Reads log files line by line
+
 2.Detects important patterns using:
 
   * String methods
   * Regular Expressions ('re module)
+
 3.Counts frequency of each error type
 4.Generates a filtered security report
 5.Displays output file size using `os` module
@@ -34,7 +37,9 @@ OpsBot automates this process and reduces manual effort significantly.
 -- Keywords Detected
 
 * 'ERROR'
+  
 * 'CRITICAL'
+  
 * 'FAILED LOGIN'
 
 -- Technologies Used
@@ -47,9 +52,13 @@ OpsBot automates this process and reduces manual effort significantly.
 -- Project Structure
 
 OpsBot/
+
 │── opsbot.py
+
 │── server.log
+
 │── security_alert_YYYY-MM-DD.txt
+
 │── README.md
 
 --How to Run
@@ -71,9 +80,13 @@ OpsBot/
 -- Sample Input (server.log)
 
 INFO: Server started
+
 ERROR: Database connection failed
+
 CRITICAL: System crash detected
+
 User login successful
+
 FAILED LOGIN attempt from IP 192.168.1.1
 
 - Sample Output
@@ -81,8 +94,11 @@ FAILED LOGIN attempt from IP 192.168.1.1
 - Console Output:
 
 Filtered Lines:
+
 ERROR: Database connection failed
+
 CRITICAL: System crash detected
+
 FAILED LOGIN attempt from IP 192.168.1.1
 
 Count:
@@ -99,13 +115,17 @@ security_alert_2026-04-24.txt
 1.Basic String Matching
 
 * Uses 'if keyword in line'
+  
 * Simple and easy to understand
+  
 * Slightly less flexible
 
 2.Regex-Based Matching 
 
 * Uses 're.compile()'
+  
 * More powerful and scalable
+  
 * Handles case-insensitive matching efficiently
 
 -- Output Details
