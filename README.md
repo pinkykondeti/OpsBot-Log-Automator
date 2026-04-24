@@ -31,7 +31,9 @@ OpsBot automates this process and reduces manual effort significantly.
   * Regular Expressions ('re module)
 
 3.Counts frequency of each error type
+
 4.Generates a filtered security report
+
 5.Displays output file size using `os` module
 
 -- Keywords Detected
@@ -74,7 +76,9 @@ OpsBot/
 3. Output will be:
 
    * Filtered lines printed on console
+   
    * Count summary displayed
+     
    * Security report file generated
 
 -- Sample Input (server.log)
@@ -102,8 +106,11 @@ CRITICAL: System crash detected
 FAILED LOGIN attempt from IP 192.168.1.1
 
 Count:
+
 ERROR : 1
+
 CRITICAL : 1
+
 FAILED LOGIN : 1
 
 -Generated File:
